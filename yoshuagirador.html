@@ -25,10 +25,10 @@
 
 <script>
 $(window).load(function (){
-  var spins = 0;
+  var vueltas = 0;
   setInterval(function () {
-    spins = spins + 1;
-    $("#spin").text(spins + " spin" + (spins != 1 ? "s" : ""));
+    vueltas = vueltas + 1;
+    $("#vuelta").text(vueltas + " vuelta" + (vueltas != 1 ? "s" : ""));
     if (spins == 10)
       $("#ethan").show();
     else if (spins == 17)
