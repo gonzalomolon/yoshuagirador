@@ -18,18 +18,18 @@
 </center>
 <br>
 <center>
-  <big>Has estado sentado durante <span id="spin">0 vueltas</span>!</big>
+  <big>Has estado sentado durante <span id="vuelta">0 vueltas</span>!</big>
 </center>
 </body>
 </html>
 
 <script>
 $(window).load(function (){
-  var spins = 0;
+  var vueltas = 0;
   setInterval(function () {
-    spins = spins + 1;
-    $("#spin").text(spins + " spin" + (spins != 1 ? "s" : ""));
-    if (spins == 10)
+    vueltas = vueltas + 1;
+    $("#vuelta").text(vueltas + " vuelta" + (vueltas != 1 ? "s" : ""));
+    if (vueltas == 10)
       $("#ethan").show();
     else if (spins == 17)
       $("#ethan").hide();
