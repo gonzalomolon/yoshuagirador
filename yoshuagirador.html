@@ -25,11 +25,11 @@
 
 <script>
 $(window).load(function (){
-  var spins = 0;
+  var vueltas = 0;
   setInterval(function () {
-    spins = spins + 1;
-    $("#spin").text(vueltas + " spin" + (vueltas != 1 ? "s" : ""));
-    if (spins == 10)
+    vueltas = vueltas + 1;
+    $("#vuelta").text(vueltas + " vuelta" + (vueltas != 1 ? "s" : ""));
+    if (vueltas == 10)
       $("#ethan").show();
     else if (spins == 17)
       $("#ethan").hide();
